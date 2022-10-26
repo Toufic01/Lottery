@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiantcolor1"
+    tools:context=".congratulation">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:lottie_fileName="happy.json"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            android:id="@+id/happy"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="1dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Congratulation"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="35dp"
+            android:background="@drawable/edittext"
+            android:layout_margin="@dimen/padding_16"
+            android:layout_below="@id/happy"
+            android:id="@+id/congratulation"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="first winner"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="35dp"
+            android:background="@drawable/edittext"
+            android:layout_margin="@dimen/padding_16"
+            android:layout_below="@id/congratulation"
+            android:id="@+id/firstname"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="second winner"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="35dp"
+            android:background="@drawable/edittext"
+            android:layout_margin="@dimen/padding_16"
+            android:layout_below="@id/firstname"
+            android:id="@+id/secondname"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="thrid winner"
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:textSize="35dp"
+            android:background="@drawable/edittext"
+            android:layout_margin="@dimen/padding_16"
+            android:layout_below="@id/secondname"
+            android:id="@+id/thirdname"></TextView>
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
+
+</LinearLayout>

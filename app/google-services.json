@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "193570694236",
+    "project_id": "the-wizard-sho",
+    "storage_bucket": "the-wizard-sho.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193570694236:android:019037169b9f2ea7e7f299",
+        "android_client_info": {
+          "package_name": "com.mess.lottery1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "193570694236-36h29qgko41nsjck61t7bbl2uo73ujmi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBI5KC7HB46cufc7IzGlBhmuKyF5MqNUfE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "193570694236-36h29qgko41nsjck61t7bbl2uo73ujmi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Jupiter2"
+    tools:context=".RandomixingActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textviewR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_16"
+                android:background="@drawable/edittext"
+                android:text="Randomizing"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="35dp"></TextView>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation"
+                android:layout_width="284dp"
+                android:layout_height="320dp"
+                android:layout_below="@+id/textviewR"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="119dp"
+                android:layout_marginEnd="71dp"
+                android:layout_marginBottom="@dimen/padding_16"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="lottery.json"
+                app:lottie_loop="true"></com.airbnb.lottie.LottieAnimationView>
+
+            <TextView
+                android:id="@+id/first_Winner"
+                android:layout_width="260dp"
+                android:layout_height="55dp"
+                android:layout_below="@id/animation"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/padding_16"
+                android:layout_marginTop="@dimen/padding_16"
+                android:layout_marginEnd="@dimen/padding_16"
+                android:layout_marginBottom="@dimen/padding_16"
+                android:background="@drawable/edittext"
+                android:gravity="center"
+                android:hint="1st winner..."
+                android:textColor="#000"
+                android:textSize="@dimen/padding_16"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/second_winner"
+                android:layout_width="260dp"
+                android:layout_height="55dp"
+                android:layout_below="@id/first_Winner"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/padding_16"
+                android:layout_marginTop="@dimen/padding_16"
+                android:layout_marginEnd="@dimen/padding_16"
+                android:layout_marginBottom="@dimen/padding_16"
+                android:background="@drawable/edittext"
+                android:gravity="center"
+                android:hint="2nd winner..."
+                android:textColor="#000"
+                android:textSize="@dimen/padding_16"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/third_winner"
+                android:layout_width="260dp"
+                android:layout_height="55dp"
+                android:layout_below="@id/second_winner"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/padding_16"
+                android:layout_marginTop="@dimen/padding_16"
+                android:layout_marginEnd="@dimen/padding_16"
+                android:layout_marginBottom="@dimen/padding_16"
+                android:background="@drawable/edittext"
+                android:gravity="center"
+                android:hint="3rd winner..."
+                android:textColor="#000"
+                android:textSize="@dimen/padding_16"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

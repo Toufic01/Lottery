@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Jupiter1"
+    tools:context=".LotteryActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/selection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/edittext"
+                android:text="Wizard Wheel"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="50dp"></TextView>
+
+            <FrameLayout
+                android:layout_below="@+id/selection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                android:id="@+id/content"></FrameLayout>
+
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:id="@+id/first"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/selection"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="70dp"
+                android:drawablePadding="@dimen/padding_16"
+                app:mtf_cardCollapsedHeight="1dp"
+                app:mtf_image="@drawable/ic_baseline_person_24"
+                app:mtf_labelColor="#FFF">
+
+                <EditText
+                    android:id="@+id/firs_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:hint="Enter first name..."
+                    android:inputType="text"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:maxLength="50"
+                    android:textColor="#000"
+                    android:textColorHint="#ffff"></EditText>
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:id="@+id/second"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/first"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:drawablePadding="@dimen/padding_16"
+                app:mtf_cardCollapsedHeight="1dp"
+                app:mtf_image="@drawable/ic_baseline_person_24"
+                app:mtf_labelColor="#FFF">
+
+                <EditText
+                    android:id="@+id/second_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
+                    android:hint="Enter second name..."
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:textColor="#000"
+                    android:textColorHint="#ffff"></EditText>
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:id="@+id/third"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/second"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:drawablePadding="@dimen/padding_16"
+                app:mtf_cardCollapsedHeight="1dp"
+                app:mtf_image="@drawable/ic_baseline_person_24"
+                app:mtf_labelColor="#FFF">
+
+                <EditText
+                    android:id="@+id/third_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:hint="Enter third name..."
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:textColor="#000"
+                    android:textColorHint="#ffff"></EditText>
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/third"
+                android:layout_marginTop="60dp"
+                android:layout_centerInParent="true"
+                android:text="Roll"
+                android:textColor="#000"
+                android:padding="@dimen/padding_16"
+                android:textSize="25dp"
+                android:background="#F6460E"
+                android:id="@+id/roll"></Button>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
