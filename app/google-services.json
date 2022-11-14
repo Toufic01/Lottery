@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "193570694236",
-    "project_id": "the-wizard-sho",
-    "storage_bucket": "the-wizard-sho.appspot.com"
+    "project_number": "892259498792",
+    "project_id": "the-wizard-s-shop",
+    "storage_bucket": "the-wizard-s-shop.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:193570694236:android:019037169b9f2ea7e7f299",
+        "mobilesdk_app_id": "1:892259498792:android:ec8e0a081badabe9bc6e1d",
         "android_client_info": {
           "package_name": "com.mess.lottery1"
         }
       },
       "oauth_client": [
         {
-          "client_id": "193570694236-36h29qgko41nsjck61t7bbl2uo73ujmi.apps.googleusercontent.com",
+          "client_id": "892259498792-dustbssbnt3j3dit7qfa3hjq9o19dkgh.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBI5KC7HB46cufc7IzGlBhmuKyF5MqNUfE"
+          "current_key": "AIzaSyCcOw14HxycOdHAQbdVYZ1VSs70sqkR1Cc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "193570694236-36h29qgko41nsjck61t7bbl2uo73ujmi.apps.googleusercontent.com",
+              "client_id": "892259498792-dustbssbnt3j3dit7qfa3hjq9o19dkgh.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

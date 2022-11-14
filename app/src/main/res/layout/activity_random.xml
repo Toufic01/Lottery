@@ -23,6 +23,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/padding_16"
                 android:background="@drawable/edittext"
+                android:fontFamily="@font/toufic1"
                 android:text="Randomizing"
                 android:textAlignment="center"
                 android:textColor="#000"
@@ -39,7 +40,7 @@
                 android:layout_marginEnd="71dp"
                 android:layout_marginBottom="@dimen/padding_16"
                 app:lottie_autoPlay="true"
-                app:lottie_fileName="lottery.json"
+                app:lottie_fileName="mk.json"
                 app:lottie_loop="true"></com.airbnb.lottie.LottieAnimationView>
 
             <TextView
@@ -98,3 +99,4 @@
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

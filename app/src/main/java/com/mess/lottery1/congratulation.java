@@ -2,33 +2,42 @@ package com.mess.lottery1;
 
 import androidx.activity.OnBackPressedCallback;
 import androidx.activity.OnBackPressedDispatcherOwner;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
+
 public class congratulation extends AppCompatActivity {
 
-    TextView first,second,third;
+    TextView winner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_congratulation);
 
-        first = findViewById(R.id.firstname);
-        second = findViewById(R.id.secondname);
-        third = findViewById(R.id.thirdname);
+        winner = findViewById(R.id.result);
 
-        String firstone1 = getIntent().getStringExtra("text4");
-        String secondone1 = getIntent().getStringExtra("text5");
-        String thridone1 = getIntent().getStringExtra("text6");
-
-        first.setText(firstone1);
-        second.setText(secondone1);
-        third.setText(thridone1);
-
+        FirebaseFirestore rootRef = FirebaseFirestore.getInstance();
+        rootRef.collection("Collection").document("Winner").get()
+                .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                        if (task.isSuccessful()) {
+                            DocumentSnapshot document = task.getResult();
+                            if (document.exists()) {
+                                String store = document.getString("name");
+                                winner.setText(store);
+                            }
+                        }
+                    }
+                });
 
     }
-
-    }
+}

@@ -38,13 +38,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                startActivity(new Intent(getApplicationContext(),LotteryActivity.class));
+                startActivity(new Intent(getApplicationContext(),RandomixingActivity.class));
             }
         },7000);
 
     }
 
     public void onBackPressed() {
-        finish();
+        finishAffinity();
     }
 }
